@@ -1,1 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+/*Nav*/
+
+.logo {
+    width: 100px;
+}
+
+nav {
+    background-color: #ffcf9d;
+    display: flex;
+    justify-content: space-between ;
+    padding: 1rem 2rem;
+    align-items: left;
+}
+
+nav div img {
+    width: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap:1rem;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24;
+}
+
+/*Nav*/
+
+body {
+    background: #F5F5DC;
+    color: #004225;
+    font-family: 'Noto Sans', sans-serif;
+    line-height: 1.8rem;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.container {
+    margin: 72px auto;
+    width: 800px;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: auto;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 12px;
+}
+
+.subheading {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.social a {
+    font-size: 24px;
+    margin: 12px 6px;
+    display: inline-block;
+}
+
+.item {
+    margin-top: 96px;
+}
+
+.item .image {
+    width: 30%;
+    display: inline-block;
+    vertical-align:top;
+}
+
+.item .description {
+    width: 60%;
+    display: inline-block;
+    vertical-align:top;
+    padding-left: 48px;
+    box-sizing: border-box;
+}
+
+.item h2 {
+    margin: 0;
+}
+
+.item i {
+    opacity: 0.5;
+    display: block;
+    margin: 12px 0;
+}
+
+#contact {
+    padding: 100px;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.contact-form div {
+    margin-bottom: 1.4rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background-color: #f1f1f1;
+    resize: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: #ffcf9d;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background: #ffcf9d;
+}
+
+@media (max-width: 992px) {
+
+    .container {
+        margin: 72px auto;
+        width: 100%;
+        text-align: center;
+        padding: 0 48px;
+        box-sizing: border-box;
+    }
+
+    .item .image {
+        width: 100%;
+        padding-bottom: 24px;
+    }
+
+    .item .description {
+        width: 100%;
+        padding-left: 0;
+    }
+}
